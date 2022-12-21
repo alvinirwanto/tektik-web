@@ -26,14 +26,14 @@ const Hero = () => {
                     <div className='grid grid-cols-[1fr_3fr] md:grid-cols-[1fr_1.5fr] xl:grid-cols-2 gap-8 mt-4 md:px-2 xl:px-8'>
                         <div className='flex flex-col items-end gap-4 mt-1.5'>
                             <div className='flex gap-4'>
-                                <div className='h-4 aspect-square bg-ventures-color' />
-                                <div className='h-4 aspect-square bg-digital-color' />
-                                <div className='h-4 aspect-square bg-network-color' />
+                                <div className='h-4 aspect-square bg-ventures-color hover:opacity-50' />
+                                <div className='h-4 aspect-square bg-digital-color hover:opacity-50' />
+                                <div className='h-4 aspect-square bg-network-color hover:opacity-50' />
                             </div>
                             <div className='flex gap-4'>
-                                <div className='h-4 aspect-square bg-education-color' />
-                                <div className='h-4 aspect-square bg-space-color' />
-                                <div className='h-4 aspect-square bg-black' />
+                                <div className='h-4 aspect-square bg-education-color hover:opacity-50' />
+                                <div className='h-4 aspect-square bg-space-color hover:opacity-50' />
+                                <div className='h-4 aspect-square bg-black hover:opacity-50' />
                             </div>
                         </div>
                         <p className='text-xl font-semibold'>
