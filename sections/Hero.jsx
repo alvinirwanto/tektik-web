@@ -86,7 +86,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className='flex items-end absolute bottom-0'>
-                        <HiArrowLongDown className='text-5xl -mb-[10rem] md:-mb-[13rem] xl:-mb-[5rem] animate-bounce' />
+                        <HiArrowLongDown className='text-5xl animate-bounce' />
                     </div>
                 </div>
             </div>

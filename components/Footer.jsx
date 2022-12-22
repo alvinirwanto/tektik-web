@@ -27,7 +27,7 @@ const Footer = () => {
                 variants={slideIn('up', 0.8, 0.8)}
                 initial='hidden'
                 whileInView='show'
-                className='bg-[#ffffff4b] md:opacity-30 h-[30rem] w-[1px] absolute left-[20%] xl:left-[40%] top-[15%]' />
+                className='bg-[#ffffff4b] md:bg-white md:opacity-30 h-[30rem] w-[1px] absolute left-[20%] xl:left-[40%] top-[15%]' />
 
 
             <div className='grid grid-cols-1 px-3 md:grid-cols-[1fr_2fr] xl:grid-cols-[1fr_1.5fr] justify-end'>

@@ -14,7 +14,7 @@ const Klien = () => {
                         variants={showText(0.5, 0.5)}
                         initial='hidden'
                         whileInView='show'
-                        className='text-3xl xl:text-xl font-semibold text-center'>Kami telah bekerja sama dengan akan terus memberikan pelayanan yang terbaik</motion.h2>
+                        className='text-3xl xl:text-xl font-semibold text-center'>Kami telah bekerja sama dengan beberapa perusahaan dan akan terus memberikan pelayanan yang terbaik</motion.h2>
                 </div>
 
                 <motion.div
