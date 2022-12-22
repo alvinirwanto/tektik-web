@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-scroll'
+
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { slideIn } from '../utils/motion'
 
 import Logo from '../public/horizontal/tektik-navbar.png'
 
@@ -24,9 +28,16 @@ const Navbar = () => {
 
     // show navbar in the mobile version
     const [showNavbar, setShowNavbar] = useState(false)
+    const handleClick = () => setShowNavbar(!showNavbar)
 
     return (
-        <nav className={`${shadowNav ? 'shadow-md' : 'shadow-none'} bg-white w-full primary-padding flex justify-between items-center fixed top-0 z-[300] px-2 md:px-4 xl:px-[5rem] py-4`}>
+        <motion.nav
+            variants={slideIn('down', 0.2, 1)}
+            initial='hidden'
+            animate='show'
+            viewport={{ once: 'false', amount: 0.25 }}
+            className={`${shadowNav ? 'shadow-md' : 'shadow-none'} bg-white w-full primary-padding flex justify-between items-center fixed top-0 z-[300] px-2 md:px-4 xl:px-[5rem] py-4`}
+        >
 
             <Image
                 src={Logo}
@@ -34,43 +45,130 @@ const Navbar = () => {
                 className='duration-500 h-[3.5rem] w-auto'
             />
 
-
             <div className='hidden md:flex justify-center items-center gap-8 xl:gap-[4rem] text-lg font-medium text-primary-blue'>
-                <div>
+                <Link
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='cursor-pointer hover:opacity-60'
+                >
                     Beranda
-                </div>
-                <div>
+                </Link>
+
+                <Link
+                    to="tentang"
+                    offset={-50}
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='cursor-pointer hover:opacity-60'
+                >
                     Tentang
-                </div>
-                <div>
+                </Link>
+
+                <Link
+                    to="klien"
+                    offset={-50}
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='cursor-pointer hover:opacity-60'
+                >
                     Klien
-                </div>
-                <div>
-                    Produk
-                </div>
-                <div className='px-8 py-2 bg-black text-white'>
+                </Link>
+
+                <Link
+                    to="bisnis-unit"
+                    offset={-100}
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='cursor-pointer hover:opacity-60'
+                >
+                    Bisnis Unit
+                </Link>
+
+                <Link
+                    to="footer"
+                    offset={-50}
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='px-8 py-2 bg-black text-white cursor-pointer hover:opacity-60'>
                     Kontak
-                </div>
+                </Link>
             </div>
 
 
             {/* Mobile Version */}
             <div className={showNavbar ? 'flex flex-col fixed top-0 left-0 w-full h-screen bg-white justify-center items-start gap-8 text-3xl px-8 font-medium text-primary-blue' : 'hidden'}>
-                <div>
+                <Link
+                    onClick={handleClick}
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                >
                     Beranda
-                </div>
-                <div>
+                </Link>
+
+                <Link
+                    onClick={handleClick}
+                    to="tentang"
+                    offset={-150}
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='cursor-pointer hover:opacity-60'
+                >
                     Tentang
-                </div>
-                <div>
+                </Link>
+
+                <Link
+                    onClick={handleClick}
+                    to="klien"
+                    offset={-50}
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='cursor-pointer hover:opacity-60'
+                >
                     Klien
-                </div>
-                <div>
-                    Produk
-                </div>
-                <div className='px-8 py-2 bg-black text-white'>
+                </Link>
+
+                <Link
+                    onClick={handleClick}
+                    to="bisnis-unit"
+                    offset={-100}
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='cursor-pointer hover:opacity-60'
+                >
+                    Bisnis Unit
+                </Link>
+
+                <Link
+                    onClick={handleClick}
+                    to="footer"
+                    offset={-50}
+                    smooth={true}
+                    duration={500}
+                    activeClass='active'
+                    spy={true}
+                    className='px-8 py-2 bg-black text-white'>
                     Kontak
-                </div>
+                </Link>
             </div>
 
             {
@@ -86,7 +184,7 @@ const Navbar = () => {
                     />
             }
 
-        </nav>
+        </motion.nav>
     )
 }
 
