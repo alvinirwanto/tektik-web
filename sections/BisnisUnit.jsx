@@ -5,6 +5,10 @@ import { slideIn, showText, staggerAnimation, staggerItems } from '../utils/moti
 
 import BisnisUnitItem from '../components/BisnisUnitItem'
 
+import LogoNetwork from '../public/logo/network.png'
+import LogoDigital from '../public/logo/digital.png'
+import LogoEducation from '../public/logo/education.png'
+
 const BisnisUnit = () => {
     return (
         <div name='bisnis-unit' className='grid grid-cols-12 gap-8 h-full place-items-center pt-[5rem] pb-[10rem] overflow-hidden'>
@@ -74,7 +78,7 @@ const BisnisUnit = () => {
                         variants={staggerItems('right')}
                     >
                         <BisnisUnitItem
-                            Icon='img'
+                            Icon={LogoNetwork}
                             Unit='Network'
                             LinkPage='https://www.google.com/'
                         />
@@ -85,7 +89,7 @@ const BisnisUnit = () => {
                         variants={staggerItems('right')}
                     >
                         <BisnisUnitItem
-                            Icon='img'
+                            Icon={LogoDigital}
                             Unit='Digital'
                             LinkPage='https://www.google.com/'
                         />
@@ -97,7 +101,7 @@ const BisnisUnit = () => {
                         variants={staggerItems('right')}
                     >
                         <BisnisUnitItem
-                            Icon='img'
+                            Icon={LogoEducation}
                             Unit='Education'
                             LinkPage='https://www.google.com/'
                         />
