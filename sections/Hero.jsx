@@ -85,9 +85,13 @@ const Hero = () => {
                             </motion.p>
                         </div>
                     </div>
-                    <div className='flex items-end absolute bottom-0'>
+                    <motion.div
+                        variants={slideIn('down', 2.5, 0)}
+                        initial='hidden'
+                        animate='show'
+                        className='flex items-end absolute bottom-0'>
                         <HiArrowLongDown className='text-5xl animate-bounce' />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
