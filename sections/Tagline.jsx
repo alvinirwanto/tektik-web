@@ -65,7 +65,7 @@ const Tagline = () => {
                                 variants={showText(0.8, 0.5)}
                                 initial='hidden'
                                 whileInView='show'
-                                className='text-6xl xl:text-7xl font-semibold'>Tactical Technology Today</motion.p>
+                                className='text-6xl xl:text-7xl font-semibold py-4'>Tactical Technology Today</motion.p>
                         </div>
                     </div>
                     <motion.div

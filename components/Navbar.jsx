@@ -15,15 +15,35 @@ const Navbar = () => {
     // Add shadow to the navbar when scroll
     const [shadowNav, setShadowNav] = useState(false)
 
-    const addShadowNav = () => {
-        window.scrollY >= 80 ? setShadowNav(true) : setShadowNav(false)
-    }
+    // const addShadowNav = () => {
+    //     window.scrollY >= 80 ? setShadowNav(true) : setShadowNav(false)
+    // }
+
+    // useEffect(() => {
+    //     window.addEventListener('scroll', addShadowNav)
+    //     return () => window.removeEventListener('scroll', addShadowNav);
+    // })
 
     useEffect(() => {
-        window.addEventListener('scroll', addShadowNav)
-        return () => window.removeEventListener('scroll', addShadowNav);
-    })
+        let oldValue = 0;
+        let newValue = 0;
 
+        window.addEventListener('scroll', function (e) {
+
+            // Get the new Value
+            newValue = window.pageYOffset;
+
+            //Subtract the two and conclude
+            if (oldValue - newValue < 0) {
+                setShadowNav(true)
+            } else if (oldValue - newValue > 0) {
+                setShadowNav(false)
+            }
+
+            // Update the old value
+            oldValue = newValue;
+        });
+    }, []);
 
 
     // show navbar in the mobile version
@@ -36,7 +56,7 @@ const Navbar = () => {
             initial='hidden'
             animate='show'
             viewport={{ once: 'false', amount: 0.25 }}
-            className={`${shadowNav ? 'shadow-md' : 'shadow-none'} bg-white w-full primary-padding flex justify-between items-center fixed top-0 z-[300] px-2 md:px-4 xl:px-[5rem] py-4`}
+            className={`${shadowNav ? '-mt-[10rem] duration-500' : 'shadow-md duration-500 mt-0'} bg-white w-full primary-padding flex justify-between items-center fixed top-0 z-[300] px-2 md:px-4 xl:px-[5rem] py-4`}
         >
 
             <Image
@@ -45,14 +65,14 @@ const Navbar = () => {
                 className='duration-500 h-[3.5rem] w-auto'
             />
 
-            <div className='hidden md:flex justify-center items-center gap-8 xl:gap-[4rem] text-lg font-medium text-primary-blue'>
+            <div className='hidden md:flex justify-center items-center gap-8 xl:gap-[4rem] text-lg font-medium text-primary-blue pt-2'>
                 <Link
                     to="home"
                     smooth={true}
                     duration={500}
                     activeClass='active'
                     spy={true}
-                    className='cursor-pointer hover:opacity-60'
+                    className='cursor-pointer opacity-60 h-9'
                 >
                     Beranda
                 </Link>
@@ -64,31 +84,31 @@ const Navbar = () => {
                     duration={500}
                     activeClass='active'
                     spy={true}
-                    className='cursor-pointer hover:opacity-60'
+                    className='cursor-pointer opacity-60 h-9'
                 >
                     Tentang
                 </Link>
 
                 <Link
                     to="klien"
-                    offset={-50}
+                    // offset={-50}
                     smooth={true}
                     duration={500}
                     activeClass='active'
                     spy={true}
-                    className='cursor-pointer hover:opacity-60'
+                    className='cursor-pointer opacity-60 h-9'
                 >
                     Klien
                 </Link>
 
                 <Link
                     to="bisnis-unit"
-                    offset={-100}
+                    // offset={-100}
                     smooth={true}
                     duration={500}
                     activeClass='active'
                     spy={true}
-                    className='cursor-pointer hover:opacity-60'
+                    className='cursor-pointer opacity-60 h-9'
                 >
                     Bisnis Unit
                 </Link>

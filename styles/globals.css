@@ -14,3 +14,10 @@ body {
   margin: 0;
   font-family: "Figtree", sans-serif;
 }
+
+.active {
+    opacity: 1;
+    /* font-weight: 600; */
+    border-bottom: 3.5px solid black;
+    transition-duration: 400ms;
+}

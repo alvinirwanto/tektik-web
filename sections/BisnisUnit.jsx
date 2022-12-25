@@ -11,7 +11,7 @@ import LogoEducation from '../public/logo/education.png'
 
 const BisnisUnit = () => {
     return (
-        <div name='bisnis-unit' className='grid grid-cols-12 gap-8 h-full place-items-center pt-[5rem] pb-[10rem] overflow-hidden'>
+        <div name='bisnis-unit' className='grid grid-cols-12 gap-8 h-full place-items-center py-[10rem] overflow-hidden'>
             <motion.div
                 variants={staggerAnimation()}
                 initial='hidden'
@@ -76,6 +76,7 @@ const BisnisUnit = () => {
 
                     <motion.div
                         variants={staggerItems('right')}
+                        className='hover:mt-[-3rem] duration-300'
                     >
                         <BisnisUnitItem
                             Icon={LogoNetwork}
@@ -87,6 +88,7 @@ const BisnisUnit = () => {
 
                     <motion.div
                         variants={staggerItems('right')}
+                        className='hover:mt-[-3rem] duration-300'
                     >
                         <BisnisUnitItem
                             Icon={LogoDigital}
@@ -99,6 +101,7 @@ const BisnisUnit = () => {
 
                     <motion.div
                         variants={staggerItems('right')}
+                        className='hover:mt-[-3rem] duration-300'
                     >
                         <BisnisUnitItem
                             Icon={LogoEducation}
