@@ -31,9 +31,9 @@ const BisnisUnit = () => {
                     variants={staggerItems('up')} className='h-4 aspect-square bg-ventures-color hover:opacity-50' />
             </motion.div>
 
-            <div className='w-full col-start-1 col-end-13 md:col-end-12 xl:col-start-5 grid-rows-1 md:row-start-1 flex flex-col gap-6 items-start px-3 md:px-8'>
-                <div className='flex items-end gap-9'>
-                    <div className='overflow-hidden'>
+            <div className='w-full col-start-1 col-end-13 md:col-end-13 xl:col-start-5 grid-rows-1 md:row-start-1 flex flex-col gap-6 items-start px-3 md:px-8'>
+                <div className='grid md:grid-cols-2 xl:grid-cols-[1fr_1fr_.5fr] items-end gap-9'>
+                    <div className=''>
                         <motion.h2
                             variants={showText(0.5, 0.5)}
                             initial='hidden'
@@ -45,10 +45,11 @@ const BisnisUnit = () => {
                         variants={slideIn('right', 0.8, 0.5)}
                         initial='hidden'
                         whileInView='show'
-                        className='hidden md:block w-full xl:w-[30%] font-medium text-lg '>Akan memberikan solusi berbasis teknologi yang dapat disesuaikan dengan kebutuhan perusahaan Anda</motion.p>
+                        className='hidden md:block w-full font-medium text-lg '>Akan memberikan solusi berbasis teknologi yang dapat disesuaikan dengan kebutuhan perusahaan Anda
+                        </motion.p>
 
                 </div>
-                <div className='flex gap-8 items-center w-full'>
+                <div className='flex xl:grid xl:grid-cols-[2.2fr_1fr] gap-8 items-center w-full'>
                     <div className='overflow-hidden'>
                         <motion.h2
                             variants={showText(0.5, 0.5)}
@@ -76,7 +77,6 @@ const BisnisUnit = () => {
 
                     <motion.div
                         variants={staggerItems('right')}
-                        className='hover:mt-[-3rem] duration-300'
                     >
                         <BisnisUnitItem
                             Icon={LogoNetwork}
@@ -88,7 +88,6 @@ const BisnisUnit = () => {
 
                     <motion.div
                         variants={staggerItems('right')}
-                        className='hover:mt-[-3rem] duration-300'
                     >
                         <BisnisUnitItem
                             Icon={LogoDigital}
@@ -101,7 +100,6 @@ const BisnisUnit = () => {
 
                     <motion.div
                         variants={staggerItems('right')}
-                        className='hover:mt-[-3rem] duration-300'
                     >
                         <BisnisUnitItem
                             Icon={LogoEducation}
