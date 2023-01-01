@@ -11,7 +11,7 @@ import LogoEducation from '../public/logo/education.png'
 
 const BisnisUnit = () => {
     return (
-        <div name='bisnis-unit' className='grid grid-cols-12 gap-8 h-full place-items-center py-[10rem] overflow-hidden'>
+        <section name='bisnis-unit' className='grid grid-cols-12 gap-8 h-full place-items-center py-[10rem] overflow-hidden'>
             <motion.div
                 variants={staggerAnimation()}
                 initial='hidden'
@@ -109,7 +109,7 @@ const BisnisUnit = () => {
                     </motion.div>
                 </motion.div>
             </div>
-        </div>
+        </section>
     )
 }
 

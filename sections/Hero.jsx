@@ -9,7 +9,7 @@ import HeroImg from '../public/dummy.jpeg'
 
 const Hero = () => {
     return (
-        <div name='home' className='w-full h-[110vh] md:h-screen py-8 md:border-b-[1.5px] border-black mb-[10rem] overflow-hidden'>
+        <section name='home' className='w-full h-[110vh] md:h-screen py-8 md:border-b-[1.5px] border-black mb-[10rem] overflow-hidden'>
             <div className='grid grid-cols-12 gap-8 h-full place-items-center'>
                 <motion.div
                     variants={slideIn('left', 0.5, 0.5)}
@@ -94,7 +94,7 @@ const Hero = () => {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

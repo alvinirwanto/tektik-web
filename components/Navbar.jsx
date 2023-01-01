@@ -55,7 +55,7 @@ const Navbar = () => {
 
     return (
         <motion.nav
-            variants={slideIn('down', 0.2, 1)}
+            variants={slideIn('down', 0.2, 0.3)}
             initial='hidden'
             animate='show'
             viewport={{ once: 'false', amount: 0.25 }}

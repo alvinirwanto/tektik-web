@@ -9,7 +9,7 @@ import HeroImg from '../public/dummy.jpeg'
 
 const Tentang = () => {
     return (
-        <div name='tentang' className='w-full h-[110vh] md:h-screen py-8 overflow-hidden' >
+        <section name='tentang' className='w-full h-[110vh] md:h-screen py-8 overflow-hidden' >
             <div className='grid grid-cols-12 gap-8 h-full place-items-center'>
                 <div className='w-full z-[100] col-start-1 col-end-13 xl:col-start-3 md:col-end-9 grid-rows-1 md:row-start-1 flex flex-col gap-6 items-start px-3 md:px-8'>
                     <div className='overflow-hidden'>
@@ -66,7 +66,7 @@ const Tentang = () => {
                 initial="hidden"
                 whileInView='show'
                 className='border-b-[1.5px] border-black w-[60%]' />
-        </div>
+        </section>
     )
 }
 

@@ -7,7 +7,7 @@ import { slideIn, showText, zoomIn, opacityIn, staggerAnimation, staggerItems } 
 
 const Klien = () => {
     return (
-        <div name='klien' className='w-full px-3 md:px-8 py-[15rem] h-full flex flex-col gap-[10rem] justify-center items-center'>
+        <section name='klien' className='w-full px-3 md:px-8 py-[15rem] h-full flex flex-col gap-[10rem] justify-center items-center'>
             <div className='flex flex-col items-center'>
                 <div className='overflow-hidden'>
                     <motion.h2
@@ -55,7 +55,7 @@ const Klien = () => {
                     </motion.div>
                 </motion.div>
             </div>
-        </div>
+        </section>
     )
 }
 

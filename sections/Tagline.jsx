@@ -6,7 +6,7 @@ import { slideIn, showText, opacityIn, staggerAnimation, staggerItems } from '..
 
 const Tagline = () => {
     return (
-        <div className='w-full h-[80vh] xl:h-screen mt-[10rem] md:mt-0 py-8 relative overflow-hidden'>
+        <section className='w-full h-[80vh] xl:h-screen mt-[10rem] md:mt-0 py-8 relative overflow-hidden'>
 
             <motion.div
                 variants={opacityIn(0.5, 1)}
@@ -100,7 +100,7 @@ const Tagline = () => {
                 initial="hidden"
                 whileInView='show'
                 className='border-b-[1.5px] border-black w-[60%] absolute bottom-0 right-0' />
-        </div>
+        </section>
     )
 }
 
