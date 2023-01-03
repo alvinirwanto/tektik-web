@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 import { slideIn, showText, staggerAnimation, staggerItems } from '../utils/motion'
 
-import HeroImg from '../public/dummy.jpeg'
+import HeroImg from '../public/about.jpg'
 
 const Tentang = () => {
     return (

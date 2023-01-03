@@ -5,7 +5,7 @@ import { slideIn, showText, staggerAnimation, staggerItems } from '../utils/moti
 
 import { HiArrowLongDown } from 'react-icons/hi2'
 
-import HeroImg from '../public/dummy.jpeg'
+import HeroImg from '../public/main-foto.jpg'
 
 const Hero = () => {
     return (
@@ -22,7 +22,7 @@ const Hero = () => {
                         className='object-cover w-full h-[50vh] md:h-[70vh]'
                     />
 
-                    <div className='w-full h-full absolute top-0 bg-gradient-to-l from-[#ffffff] to-transparent' />
+                    <div className='w-full h-full absolute top-0 bg-gradient-to-l from-[#ffffffcb] to-transparent' />
                 </motion.div>
 
                 <div className='relative z-[100] col-start-1 md:col-start-4 xl:col-start-6 col-end-13 grid-rows-1 md:row-start-1 flex flex-col px-3 md:px-8 md:mt-[5rem]'>

@@ -6,7 +6,6 @@ import Hero from '../sections/Hero'
 import Klien from '../sections/Klien'
 import Tagline from '../sections/Tagline'
 import Tentang from '../sections/Tentang'
-import Testing from '../sections/Testing'
 
 export default function Home() {
     return (
@@ -21,7 +20,6 @@ export default function Home() {
                 <Navbar />
                 <Hero />
                 <Tentang />
-                <Testing/>
                 <Tagline />
                 <Klien />
                 <BisnisUnit />
