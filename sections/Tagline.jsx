@@ -50,6 +50,7 @@ const Tagline = () => {
                             variants={showText(0.3, 0.5)}
                             initial='hidden'
                             whileInView='show'
+                            viewport={{ once: true }}
                             className='text-network-color font-bold text-2xl mb-[4rem]'>Tagline</motion.h2>
                     </div>
                     <div className='flex flex-col gap-4'>
@@ -58,6 +59,7 @@ const Tagline = () => {
                                 variants={showText(0.6, 0.5)}
                                 initial='hidden'
                                 whileInView='show'
+                                viewport={{ once: true }}
                                 className='text-7xl xl:text-8xl font-bold'>Tektik : </motion.p>
                         </div>
                         <div className='overflow-hidden'>
@@ -65,6 +67,7 @@ const Tagline = () => {
                                 variants={showText(0.8, 0.5)}
                                 initial='hidden'
                                 whileInView='show'
+                                viewport={{ once: true }}
                                 className='text-6xl xl:text-7xl font-semibold py-4'>Tactical Technology Today</motion.p>
                         </div>
                     </div>
@@ -99,6 +102,7 @@ const Tagline = () => {
                 variants={slideIn('right', 1, 1.5)}
                 initial="hidden"
                 whileInView='show'
+                viewport={{ once: true }}
                 className='border-b-[1.5px] border-black w-[60%] absolute bottom-0 right-0' />
         </section>
     )

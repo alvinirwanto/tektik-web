@@ -21,12 +21,14 @@ const Footer = () => {
                 variants={slideIn('right', 0.5, 0.8)}
                 initial='hidden'
                 whileInView='show'
+                viewport={{ once: true }}
                 className='bg-white border-none outline-none opacity-30 w-[60rem] h-[.5px] absolute right-[40%] top-[50%]' />
 
             <motion.hr
                 variants={slideIn('up', 0.5, 0.8)}
                 initial='hidden'
                 whileInView='show'
+                viewport={{ once: true }}
                 className='bg-[#ffffff4b] md:bg-white md:opacity-30 h-[30rem] w-[1px] absolute left-[20%] xl:left-[40%] top-[15%]' />
 
 
@@ -39,6 +41,7 @@ const Footer = () => {
                                 variants={showText(0.3, 0.5)}
                                 initial='hidden'
                                 whileInView='show'
+                                viewport={{ once: true }}
                                 className='text-2xl font-semibold'>Contact Us</motion.h2>
                         </div>
 
@@ -47,6 +50,7 @@ const Footer = () => {
                                 variants={showText(0.5, 0.5)}
                                 initial='hidden'
                                 whileInView='show'
+                                viewport={{ once: true }}
                                 className='text-9xl font-bold'>Let's Talk</motion.p>
                         </div>
                     </div>
@@ -56,12 +60,14 @@ const Footer = () => {
                             variants={slideIn('left', 0.6, 0.5)}
                             initial='hidden'
                             whileInView='show'
+                            viewport={{ once: true }}
                             className='bg-white w-[10rem] h-1 hidden xl:block justify-self-end' />
 
                         <motion.p
                             variants={slideIn('down', 0.6, 0.5)}
                             initial='hidden'
                             whileInView='show'
+                            viewport={{ once: true }}
                             className='text-xl'>We are looking forward to start a great project with you.</motion.p>
                     </div>
 
@@ -69,6 +75,7 @@ const Footer = () => {
                         variants={slideIn('down', 0.6, 0.5)}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                     >
                         <Image
                             src={LongArrow}
@@ -86,6 +93,7 @@ const Footer = () => {
                         variants={slideIn('left', 0.5, 0.8)}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                         className='text-2xl mt-8 font-bold'>
                         Our Office
                     </motion.p>
@@ -94,12 +102,14 @@ const Footer = () => {
                         variants={slideIn('left', 0.5, 0.8)}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                         className='xl:max-w-[400px]'>Gedung Teja Buana, 2nd Floor, JL. Menteng Raya, No. 29, RT.15/RW.10, Kebon Sirih, Menteng, Jakarta Pusat, 10340</motion.p>
 
                     <motion.div
                         variants={staggerAnimation()}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                         className='flex justify-between md:justify-start items-center gap-4 text-white mt-[3rem] xl:mt-4'>
                         <motion.div
                             variants={staggerItems('left')}

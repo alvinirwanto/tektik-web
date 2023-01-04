@@ -19,7 +19,7 @@ const Hero = () => {
                 >
                     <Image
                         src={HeroImg}
-                        className='object-cover w-full h-[50vh] md:h-[70vh]'
+                        className='object-contain xl:object-cover w-full h-[50vh] md:h-[70vh]'
                     />
 
                     <div className='w-full h-full absolute top-0 bg-gradient-to-l from-[#ffffffcb] to-transparent' />

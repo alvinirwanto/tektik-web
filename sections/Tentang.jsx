@@ -17,12 +17,14 @@ const Tentang = () => {
                             variants={showText(0.3, 0.5)}
                             initial='hidden'
                             whileInView='show'
+                            viewport={{ once: true }}
                             className='text-digital-color font-bold text-2xl'>Tentang Kami</motion.h2>
                     </div>
                     <motion.p
                         variants={showText(0.5, 0.5)}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                         className='text-[2.5rem] leading-[3rem] text-black font-semibold'>Tektik bergerak dalam bidang konsultan manajemen IT yang telah berdiri sejak awal tahun 2021.</motion.p>
                 </div>
 
@@ -31,6 +33,7 @@ const Tentang = () => {
                         variants={slideIn('right', 0.5, 0.5)}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                     >
                         <Image
                             src={HeroImg}
@@ -65,6 +68,7 @@ const Tentang = () => {
                 variants={slideIn('left', 1, 1.5)}
                 initial="hidden"
                 whileInView='show'
+                viewport={{ once: true }}
                 className='border-b-[1.5px] border-black w-[60%]' />
         </section>
     )

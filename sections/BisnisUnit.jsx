@@ -38,6 +38,7 @@ const BisnisUnit = () => {
                             variants={showText(0.5, 0.5)}
                             initial='hidden'
                             whileInView='show'
+                            viewport={{ once: true }}
                             className='text-7xl md:text-9xl font-bold'>Bisnis</motion.h2>
                     </div>
 
@@ -45,6 +46,7 @@ const BisnisUnit = () => {
                         variants={slideIn('right', 0.8, 0.5)}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                         className='hidden md:block w-full font-medium text-lg '>Akan memberikan solusi berbasis teknologi yang dapat disesuaikan dengan kebutuhan perusahaan Anda
                     </motion.p>
 
@@ -55,12 +57,14 @@ const BisnisUnit = () => {
                             variants={showText(0.5, 0.5)}
                             initial='hidden'
                             whileInView='show'
+                            viewport={{ once: true }}
                             className='text-7xl md:text-9xl font-bold'>Unit Kami</motion.h2>
                     </div>
                     <motion.hr
                         variants={slideIn('right', 1, 0.5)}
                         initial='hidden'
                         whileInView='show'
+                        viewport={{ once: true }}
                         className='bg-black w-[10rem] h-1 hidden xl:block' />
                 </div>
 
@@ -73,6 +77,7 @@ const BisnisUnit = () => {
                     variants={staggerAnimation()}
                     initial='hidden'
                     whileInView='show'
+                    viewport={{ once: true }}
                     className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4'>
 
                     <motion.div
