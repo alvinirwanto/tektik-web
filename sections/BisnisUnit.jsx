@@ -46,10 +46,10 @@ const BisnisUnit = () => {
                         initial='hidden'
                         whileInView='show'
                         className='hidden md:block w-full font-medium text-lg '>Akan memberikan solusi berbasis teknologi yang dapat disesuaikan dengan kebutuhan perusahaan Anda
-                        </motion.p>
+                    </motion.p>
 
                 </div>
-                <div className='flex xl:grid xl:grid-cols-[2.2fr_1fr] gap-8 items-center w-full'>
+                <div className='flex xl:grid xl:grid-cols-[3fr_1fr] gap-8 items-center w-full'>
                     <div className='overflow-hidden'>
                         <motion.h2
                             variants={showText(0.5, 0.5)}

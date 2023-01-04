@@ -121,8 +121,6 @@ const Navbar = () => {
                     offset={-50}
                     smooth={true}
                     duration={500}
-                    activeClass='active'
-                    spy={true}
                     className='px-8 py-2 bg-black text-white cursor-pointer hover:opacity-60'>
                     Kontak
                 </Link>
@@ -187,8 +185,6 @@ const Navbar = () => {
                     offset={-50}
                     smooth={true}
                     duration={500}
-                    activeClass='active'
-                    spy={true}
                     className='px-8 py-2 bg-black text-white'>
                     Kontak
                 </Link>

@@ -30,7 +30,7 @@ const Klien = () => {
                             src='/umb.png'
                             width={1000}
                             height={1000}
-                            className='object-contain h-[7rem] md:h-[7rem] w-auto grayscale hover:grayscale-0'
+                            className='object-contain h-[7rem] md:h-[7rem] w-auto xl:grayscale xl:hover:grayscale-0'
                         />
                     </motion.div>
                     <motion.div
@@ -40,7 +40,7 @@ const Klien = () => {
                             src='/fma.png'
                             width={1000}
                             height={1000}
-                            className='object-contain h-[4rem] md:h-[4rem] w-auto grayscale hover:grayscale-0'
+                            className='object-contain h-[4rem] md:h-[4rem] w-auto xl:grayscale xl:hover:grayscale-0'
                         />
                     </motion.div>
                     <motion.div
@@ -50,7 +50,7 @@ const Klien = () => {
                             src='/bams.png'
                             width={1000}
                             height={1000}
-                            className='object-contain h-[7rem] md:h-[7rem] w-auto grayscale hover:grayscale-0'
+                            className='object-contain h-[7rem] md:h-[7rem] w-auto xl:grayscale xl:hover:grayscale-0'
                         />
                     </motion.div>
                 </motion.div>

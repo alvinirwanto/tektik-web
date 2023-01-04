@@ -18,13 +18,13 @@ const Footer = () => {
         <footer name='footer' className='bg-black text-white pt-[7rem] pb-8 px-3 md:px-8 xl:px-[7rem] relative overflow-hidden'>
 
             <motion.hr
-                variants={slideIn('right', 0.8, 0.8)}
+                variants={slideIn('right', 0.5, 0.8)}
                 initial='hidden'
                 whileInView='show'
                 className='bg-white border-none outline-none opacity-30 w-[60rem] h-[.5px] absolute right-[40%] top-[50%]' />
 
             <motion.hr
-                variants={slideIn('up', 0.8, 0.8)}
+                variants={slideIn('up', 0.5, 0.8)}
                 initial='hidden'
                 whileInView='show'
                 className='bg-[#ffffff4b] md:bg-white md:opacity-30 h-[30rem] w-[1px] absolute left-[20%] xl:left-[40%] top-[15%]' />
@@ -83,7 +83,7 @@ const Footer = () => {
                         className='object-contain h-[5rem] w-auto self-start'
                     />
                     <motion.p
-                        variants={slideIn('left', 0.8, 0.8)}
+                        variants={slideIn('left', 0.5, 0.8)}
                         initial='hidden'
                         whileInView='show'
                         className='text-2xl mt-8 font-bold'>
@@ -91,7 +91,7 @@ const Footer = () => {
                     </motion.p>
 
                     <motion.p
-                        variants={slideIn('left', 1, 0.8)}
+                        variants={slideIn('left', 0.5, 0.8)}
                         initial='hidden'
                         whileInView='show'
                         className='xl:max-w-[400px]'>Gedung Teja Buana, 2nd Floor, JL. Menteng Raya, No. 29, RT.15/RW.10, Kebon Sirih, Menteng, Jakarta Pusat, 10340</motion.p>
